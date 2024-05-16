@@ -1,10 +1,10 @@
+/* This is where the whole Site will look like */
 body {
     border: 2px solid black;
     font-family: sans-serif;
 }
 
-/* This is where the whole Site will look like */
-
+/* This is where the style for the Title and such will be */
 .title {
     border-bottom: 2px solid black;
     padding-bottom: 20px;
@@ -17,16 +17,75 @@ body {
     border: 3px solid black;
 }
 
-/* This is where the style for the Title and such will be */
-
+/* This is where the author section will come */
 .author {
     border-bottom: 2px solid black;
     padding-left: 10px;
-    font-family: ;
+}
+
+.authtitle {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .profile {
     height: 100px;
     width: 100px;
     border: 3px solid black;
+}
+
+/* This is where the whole Newsletter Article will come */
+.article {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+/* This is where the introduction will come */
+.introSpoil {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+    color: black;
+    text-shadow: 2px 2px grey;
+}
+
+.introImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+/* This is where the middle text (mText) will come */
+
+.mTextSpoil {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: underline;
+    color: black;
+    text-shadow: 2px 2px grey;
+}
+
+.mtextImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 500px;
+    border: 2px solid black;
+}
+
+/* This is where the conclusion will come */
+
+
+/* This is where the footnote comes */
+.footnote {
+    padding-right: 10px;
+    font-size: x-small;
+    text-align: right;
 }
