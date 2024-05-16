@@ -1,0 +1,32 @@
+body {
+    border: 2px solid black;
+    font-family: sans-serif;
+}
+
+/* This is where the whole Site will look like */
+
+.title {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.titleImage {
+    height: 250px;
+    width: 500px;
+    border: 3px solid black;
+}
+
+/* This is where the style for the Title and such will be */
+
+.author {
+    border-bottom: 2px solid black;
+    padding-left: 10px;
+    font-family: ;
+}
+
+.profile {
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+}
