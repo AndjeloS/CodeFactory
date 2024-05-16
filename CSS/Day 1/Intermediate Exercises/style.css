@@ -1,0 +1,27 @@
+div {
+    margin: 5px;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
+div>#third>span {
+    visibility: hidden;
+}
+
+/* .right>p {
+    display: none;
+} */
+
+#third p {
+    background-color: lightcyan;
+}
+
+img {
+    height: 300px;
+}
