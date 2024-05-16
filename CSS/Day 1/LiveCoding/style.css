@@ -19,13 +19,32 @@ p {
     color: black;
 } */
 
-.outerDiv>p {
+/* .outerDiv>p {
     color: blue;
-}
+} */
 
 /* Wenn man eine Abstand nach werden alle Paragraphe im Selector .outerDiv angesteuert.
 Wenn man > verwendet wird nur der unmittelbarer verwendet (nächst gelegehende element - "direct Child")*/
-
+/* 
 .outerDiv>section>p {
     color: red;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 20px groove red;
+    border-left: 0px;
+    /* border-radius: 50px; */
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: sans-serif;
 }
