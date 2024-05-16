@@ -9,6 +9,8 @@ body {
     border-bottom: 2px solid black;
     padding-bottom: 20px;
     text-align: center;
+    text-decoration: underline;
+    color: crimson;
 }
 
 .titleImage {
@@ -32,6 +34,12 @@ body {
     height: 100px;
     width: 100px;
     border: 3px solid black;
+}
+
+.helloButton {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 /* This is where the whole Newsletter Article will come */
@@ -88,4 +96,5 @@ body {
     padding-right: 10px;
     font-size: x-small;
     text-align: right;
+    font-weight: bold;
 }
