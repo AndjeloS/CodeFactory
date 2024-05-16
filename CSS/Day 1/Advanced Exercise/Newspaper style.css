@@ -1,6 +1,7 @@
 /* This is where the whole Site will look like */
 body {
     border: 2px solid black;
+    border-radius: 15px;
     font-family: sans-serif;
 }
 
@@ -23,11 +24,13 @@ body {
 .author {
     border-bottom: 2px solid black;
     padding-left: 10px;
+
 }
 
 .authtitle {
     font-weight: bold;
     text-decoration: underline;
+    padding: 15px;
 }
 
 .profile {
