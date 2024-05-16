@@ -1,4 +1,31 @@
-section {
+/* section {
     color: cyan;
     font-weight: bold;
+}
+
+div {
+    background-color: blue;
+}
+
+.myP {
+    color: red;
+}
+
+p {
+    color: papayawhip;
+}
+
+#idSelector {
+    color: black;
+} */
+
+.outerDiv>p {
+    color: blue;
+}
+
+/* Wenn man eine Abstand nach werden alle Paragraphe im Selector .outerDiv angesteuert.
+Wenn man > verwendet wird nur der unmittelbarer verwendet (nächst gelegehende element - "direct Child")*/
+
+.outerDiv>section>p {
+    color: red;
 }
