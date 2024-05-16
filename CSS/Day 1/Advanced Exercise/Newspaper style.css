@@ -14,8 +14,8 @@ body {
 }
 
 .titleImage {
-    height: 250px;
-    width: 500px;
+    height: 400px;
+    width: 700px;
     border: 3px solid black;
 }
 
@@ -49,7 +49,20 @@ body {
     text-align: justify;
 }
 
+.artTitle {
+    font-size: x-large;
+    width: 1000px;
+    padding-left: 15%;
+    text-align: center;
+}
+
 /* This is where the introduction will come */
+.intro {
+    width: 1000px;
+    padding-left: 15%;
+    text-align: justify;
+}
+
 .introSpoil {
     text-align: center;
     font-weight: bold;
@@ -69,6 +82,11 @@ body {
 }
 
 /* This is where the middle text (mText) will come */
+.mText {
+    width: 1000px;
+    padding-left: 15%;
+    text-align: justify;
+}
 
 .mTextSpoil {
     text-align: center;
@@ -89,7 +107,11 @@ body {
 }
 
 /* This is where the conclusion will come */
-
+.conclusion {
+    width: 1000px;
+    padding-left: 15%;
+    text-align: justify;
+}
 
 /* This is where the footnote comes */
 .footnote {
