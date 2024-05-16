@@ -93,8 +93,9 @@ body {
 
 /* This is where the footnote comes */
 .footnote {
+    text-align: right;
     padding-right: 10px;
     font-size: x-small;
-    text-align: right;
     font-weight: bold;
+
 }
