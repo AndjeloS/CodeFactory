@@ -1,63 +1,92 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
     margin: 0;
     padding: 0;
 }
-
-body {
-    background-color: #333;
+body{
+    background-color:#333;
     color: rgba(255, 239, 213, 0.623);
     text-align: center;
 }
-
-.container {
+.container{
     width: 400px;
     height: 400px;
     border: 3px solid whitesmoke;
     margin: 0 auto;
 }
-
-div {
+section{
     width: 100px;
     height: 100px;
-
+    
 }
 
 
-.sticky {
+.sticky{
     background-color: rgb(165, 165, 109);
     position: sticky;
     top: 40px;
-
-
+   
+ 
 }
 
-.fixed {
+.fixed{
     position: fixed;
-    top: 340px;
-    /* left: 0; */
-    background-color: rgb(103, 103, 165);
+    top:100px;
+    left: 0;
+   background-color: rgb(103, 103, 165);
 }
 
-.relative {
+.relative{
     background-color: firebrick;
     position: relative;
-    /* top: 100px;
-    left: 150px; */
+    top:100px;
+    left: 150px;
 }
 
 
-.absolute {
+.absolute{
     background-color: rgb(74, 136, 74);
     position: absolute;
-    /* bottom: 0;
-    left: 0; */
+    top: 0;
+    left: 0;
 }
 
-.absolute_child {
+.absolute_child{
     position: absolute;
     bottom: 40px;
     left: 40px;
     width: 20px;
     height: 20px;
     background-color: rgb(116, 80, 150);
+}
+
+div, span{
+    border: 1px solid red;
+}
+span{
+    color: rgb(192, 192, 242);
+}
+div{
+    font-size: 1rem;
+    width: 20dvw;
+    height: 5dvh;
+    text-shadow: 2px 2px 3px limegreen;
+    
+}
+article{
+    box-shadow: 0px 0px 10px 0px orange;
+    font-size: 32px;
+    width: 50%;
+    border: 1px solid white;
+    background-color: #ff006e;
+}
+p{
+    font-style:normal;
+    font-weight: bolder;
+    text-align: start;
+    word-spacing: 1em;
+    letter-spacing: 5px;
+    line-height: 3rem;
+    text-indent: 2rem;
+    font-family: "Dancing Script", cursive;
 }
