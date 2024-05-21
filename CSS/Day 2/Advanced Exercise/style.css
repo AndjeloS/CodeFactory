@@ -1,1 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/* Navbar start here */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    text-align: left;
+}
+
+.navbar a {
+    position: left;
+    margin: 0 auto;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav_image {
+    width: 40px;
+    top: 8px;
+    left: 8px;
+    margin: 0 auto;
+    position: relative;
+    float: left;
+}
+
+.dropdown {
+    float: center;
+    overflow: hidden;
+    padding-left: 2%;
+}
+
+.dropbtn-img {
+    width: 30px;
+    margin: 0 auto;
+    position: relative;
+    float: left;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Navbar ends here */
+
+.header>h1 {
+    text-align: center;
+}
+
+.OTK_Logo {
+    width: 4%;
+}
+
+.header>p {
+    text-align: center;
+    color: rgba(35, 35, 35, 0.8);
+    font-size: large;
+    text-decoration: underline;
+}
+
+div>.hero {
+    background-color: #282727;
+    text-align: center;
+    border: 2px;
+
+    box-shadow: 2px 2px 10px black;
+}
+
+.hero>img {
+    width: 100%;
+    padding-top: 2p;
+}
+
+.sub_form {
+    border: 2px solid;
+    padding: 2%;
+    text-align: left;
+}
+
+label {
+    text-decoration: underline;
+}
+
+footer {
+    padding-top: 5px;
+    text-align: right;
+    font-size: x-small;
+}
+
+p>img {
+    width: 2%;
+}
