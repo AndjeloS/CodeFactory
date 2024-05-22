@@ -1,0 +1,123 @@
+:root{
+   --primaryColor:firebrick;
+   --secondaryColor: darkred;
+   --fontSize: clamp(16px, 2vw, 22px);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgray;
+}
+header, section{
+    --color: red;
+    min-height: 100vh;
+    margin: 1.5rem;
+ 
+}
+h1, h2{
+    text-align: center;
+    padding: 2rem;
+    color: var(--primaryColor);
+}
+
+ul>li{
+    border-bottom: 2px solid firebrick
+}
+article{
+    background-color:gold;
+    padding: 1rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.nav-list{
+    font-size: var(--fontSize);
+    /* flex-direction: row; */
+    display: flex;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+    /* justify-content:center; */
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.nav-list li{
+  list-style: none;
+ flex: 1;
+}
+
+.nav-list li a:active, .nav-list li a:focus{
+    color: var(--primaryColor);
+}
+
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: .3rem;
+    text-shadow: 2px 2px 2px black;
+}
+.nav-list li a:hover{
+   background-color: var(--secondaryColor);
+}
+.nav-list li a:hover i{
+    color: white;
+}
+.nav-list li::first-letter{
+   text-transform: uppercase;
+}
+
+p{
+    font-size: var(--fontSize);
+}
+
+.columns{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+.columns > *{
+    /* flex: 1;  first way*/ 
+    /* flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 0;  second way*/
+    /* flex-basis: 100%; third way*/ 
+    width: 100%;
+    /* fourth way  */
+}
+
+article:nth-child(2){
+    background-color: magenta;
+   align-self: flex-start;
+}
+
+/* -1 0 1 2 3 */
+
+
+.test{
+    display: inline-block;
+    border: 2px solid red;
+    height: 100px;
+    max-width: 500px;
+    min-width: 100px;
+    overflow: scroll;
+    
+}
+
+.homeIcon{
+    color: red;
+}
