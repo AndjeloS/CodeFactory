@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --h1FontSize: clamp(42px, 2vw, 64px);
+    --h2FontSize: clamp(30px, 2vw, 52px);
+    --normalTextSize: clamp(20px, 2vw, 26px);
+    --verySmallTextSize: clamp(10px, 2vw, 16px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: rgba(58, 136, 247, 0.458);
+}
+
+.navbar {
+    display: flex;
+    background-image: linear-gradient(to bottom, blue, aqua);
+    max-width: 90%;
+    margin: 5px auto;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    border: 2px solid;
+    border-radius: 25px;
+
+
+
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.navbar-icon {
+    width: 2em;
+}
+
+
+.nav-list a {
+    color: rgba(0, 0, 0, 0.641);
+    text-decoration: none;
+}
+
+.home {
+    display: flex;
+    justify-content: flex-start;
+    width: 15%;
+}
+
+.shop {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    width: 15%;
+}
+
+.homepage {
+    margin: 3% auto;
+    max-width: 80%;
+}
+
+.page-body h1 {
+    text-align: center;
+    font-size: var(--h1FontSize);
+
+}
+
+.page-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4% auto;
+    width: 80%;
+}
+
+.page-body img {
+    margin: 2% auto;
+    width: 100%;
+}
+
+.page-body-text {
+    border: 2px solid black;
+    margin-top: 4%;
+    width: 100%;
+}
+
+.page-body-text p {
+    font-family: sans-serif;
+    size: var(--normalTextSize);
+    text-align: justify;
+    align-self: center;
+    padding: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: var(--verySmallTextSize);
+
+}
+
+.footnote {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+    width: 100%;
+    font-size: var(--verySmallTextSize);
+}
+
+.footnote img {
+    width: 10px;
+    height: 10px;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2% auto;
+    width: 100%;
+}
+
+.news summary {
+    text-align: center;
+    font-size: var(--h2FontSize);
+    width: 100%;
+}
+
+.news-text p {
+    font-family: 'Times New Roman';
+    size: var(--normalTextSize);
+    text-align: justify;
+    align-self: center;
+
+}
