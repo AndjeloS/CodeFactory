@@ -1,0 +1,34 @@
+.grid-item {
+    outline: 1px solid red;
+    min-height: 10vh;
+}
+
+.grid {
+    display: grid;
+    max-width: 90%;
+    margin: 0% auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3rem;
+}
+
+.big-row {
+    grid-row: span 2;
+}
+
+.big-col {
+    grid-column: span 2;
+}
+
+.grid-item:first-child {
+    background-image: url(https://cdn.pixabay.com/photo/2021/07/24/07/23/chow-chow-6488846_640.jpg);
+    background-size: cover;
+
+    /* background-image: linear-gradient(to left bottom, blue, aqua, lightblue); */
+
+    /* background-image: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.255) 50%),
+        linear-gradient(90deg, rgb(166.70.70.), 50% rgb(208.193.64) 50%); */
+
+    /* background-image: radial-gradient(white, aqua, blue, black); */
+
+    /* background-image: conic-gradient(blue, yellow, orange, purple, red, blue); */
+}
