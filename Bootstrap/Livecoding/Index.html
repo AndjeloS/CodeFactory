@@ -4,13 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Document</title>
+    <style>
+        li {
+            color: red;
+        }
+
+        #test {
+            color: purple !important;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <div class="container">
+        <p class="display-1">First Weeks at CodeFactory</p>
+        <p class="h1 text-uppercase">First Weeks at CodeFactory</p>
+        <p class="text-md-center text-lg-end fst-italic">
+            I've been learning about web development at CodeFactory. Here's a summary of what
+            I've learned so far and what I will learn in the upcoming weeks:
+        </p>
+
+        <p class="fs-4 fw-bold">Git and GitHub</p>
+        <ul>
+            <li class="text-decoration-line-through">Understanding version control and the necessity of Git.</li>
+            <li class="text-decoration-underline">Installing and configuring Git</li>
+            <li class="text-primary" id="test">Making commits and following best practices and standards.</li>
+            <li>Working with GitHub repositories</li>
+            <li class="text-danger text-opacity-25">Cloning projects from GitHub to the local machine.</li>
+        </ul>
+
+        <p>HTML</p>
+        <ul>
+            <li class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Using HTML tags to create and structure websites.
+            </li>
+            <li class="bg-primary text-light ps-2 pb-4">Creating a simple HTML document and understanding its
+                components.
+            </li>
+            <li class="mx-3 my-4">Formatting text with headings and paragraphs.</li>
+            <li>Incorporating images and links into web pages.</li>
+            <li>Distinguishing between block-level and inline elements, using div and span.
+            </li>
+        </ul>
+
+        <p>CSS</p>
+        <ul class="list-group">
+            <li class="list-group-item ">Understanding the anatomy of Cascading Style Sheets (CSS).</li>
+            <li class="list-group-item">Using internal, external, and inline styles.</li>
+            <li class="list-group-item active">Applying CSS selectors including element, ID, and class selectors.</li>
+            <li class="list-group-item">Exploring the box model and its components: dimensions, margin, padding, and
+                border.</li>
+            <li class="list-group-item">Implementing different positioning methods: static, fixed, absolute, sticky, and
+                relative.</li>
+        </ul>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
