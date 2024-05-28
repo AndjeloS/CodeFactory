@@ -62,3 +62,46 @@ let longText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
 console.log(longText);
 console.log(longText.substring(0, 50));
 console.log(longText.substring(0, 1).toUpperCase());
+
+
+//ARAYS
+
+//Arrays multiple values
+// let arrayNumber = [1, 2, 30, 77, -10, 0, 0.15];
+// console.log(arrayNumber);
+
+// let students = ["John", "Mary", "Paul", "Kate", "Aci", "Martin"];
+// let randomArray = ["John", 12, false, null]
+// console.log(students[students.length - 1]);
+// console.log(students[5]);
+
+//multi dimensional array
+let arrayNumber = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+];
+console.log(arrayNumber[2][1]);
+console.log(arrayNumber[1][2], arrayNumber[0][0]);
+
+let names = ["Test 1", "Test 2", "Test 3", "Test 4"]
+
+//push adds element to array
+names.push("Test 5")
+console.log(names);
+
+//pop will remove last element (not really used)
+// names.pop()
+// console.log(names);
+
+//splice (index,  how many elements you want to remove)
+names.splice(1, 2);
+console.log(names);
+
+// names.splice(1, 2, "Test 2", "Test 3", "Test 44", "Test 55");
+// console.log(names);
+
+//sort()
+let students = ["John", "Mary", "Paul", "Kate", "Aci", "Martin"];
+console.log(students.sort());
+console.log(students);
