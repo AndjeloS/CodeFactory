@@ -87,3 +87,23 @@ console.log(avgJohn);
 
 // var a =13 //iz is noz inside any block - GLOBAL
 let a = 13; //GLOBAL
+
+
+//Math
+
+// let random = Math.random() * 26; //random number between 0 and 25
+
+//-5    25
+// let random = (Math.random() * 31) - 5; // from -5 to 25
+
+// Math florr - rounds numbers
+// random = Math.floor(random)
+
+
+let random = Math.floor((Math.random() * 31) - 5)
+console.log(random);
+
+//Date
+
+let date = new Date();
+console.log(date.getFullYear());
