@@ -14,3 +14,10 @@ let randomJob = jobTitle[(Math.floor(Math.random() * jobTitle.length))];
 
 console.log(`You will be a ${randomJob} in ${randomLocation}, and married to ${randomPartnerName}
 with ${children} kids.`);
+
+
+function crystalGazer(num_children, partner, location, title) {
+    return `You will be a ${title} in ${location} and married to ${partner} with ${num_children} children.`;
+}
+
+console.log(crystalGazer(2, "Maria", "Vienna", "WebDev"));
