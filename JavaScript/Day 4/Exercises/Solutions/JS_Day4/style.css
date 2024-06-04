@@ -1,0 +1,31 @@
+.santa-grid {
+    width: 30%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.santa-grid > img {
+    width: 100%;
+}
+
+
+
+
+#fake-body {
+    /* if the cirle is the only thing on the page you have to use 100vh as height */
+    height: 500px;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex direction is used to bring the paragraph below the circle again,
+    otherwise it would be to the right of it in one line */
+    flex-direction: column;
+}
+
+#circle {
+    width: 300px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 3px dashed black;
+}

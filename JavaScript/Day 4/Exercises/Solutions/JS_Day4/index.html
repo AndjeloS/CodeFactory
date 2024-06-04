@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Day 4 Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ================ -->
+    <!-- ==== BASIC ===== -->
+    <!-- ================ -->
+
+    <!-- EX 1 -->
+    <form id="basic-form">
+        <input type="text" id="fName">
+        <input type="text" id="lName">
+        <input type="number" id="age">
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="basic-result"></div>
+
+
+    <br><br>
+    <!-- EX 2 -->
+    <form id="basic-form2">
+        <input type="text" id="fName2">
+        <input type="text" id="lName2">
+        <input type="number" id="age2">
+        <!-- here the select element has the id, each option only need a value and 
+        some text that shows in the rendered dropdown menu, the value is what we get
+        in javascript while the text is just to display -->
+        <select id="select">
+            <option value="it">IT</option>
+            <option value="hospitality">Hospitality</option>
+            <option value="smt">Something else</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="basic-result2"></div>
+
+
+
+
+    <!-- ================ -->
+    <!-- = INTERMEDIATE = -->
+    <!-- ================ -->
+
+    <!-- styled and "gridified" in css, note the class of santa only for all the santas -->
+    <div class="santa-grid">
+        <img src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png" alt="Present">
+        <img class="santa" src="https://juststickers.in/wp-content/uploads/2016/11/santa-claus.png" alt="Santa">
+        <img src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png" alt="Present">
+        <img src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png" alt="Present">
+        <img class="santa" src="https://juststickers.in/wp-content/uploads/2016/11/santa-claus.png" alt="Santa">
+        <img src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png" alt="Present">
+        <img class="santa" src="https://juststickers.in/wp-content/uploads/2016/11/santa-claus.png" alt="Santa">
+        <img src="https://cdn.shopify.com/s/files/1/1369/2605/articles/White_Gift_Box_with_Red_Bow_PNG_Image_2048x.png" alt="Present">
+        <img class="santa" src="https://juststickers.in/wp-content/uploads/2016/11/santa-claus.png" alt="Santa">
+    </div>
+
+    <button id="color-btn">Color the background</button>
+
+
+
+
+    <!-- ================ -->
+    <!-- === ADVANCED === -->
+    <!-- ================ -->
+
+    <!-- the fake-body is only used because the task says center it on the page
+    normally you would do this for the normal body if you only have the circle
+    and not all the classwork -->
+    <div id="fake-body">
+        <!-- styled with css -->
+        <div id="circle"></div>
+        <p id="circle-text">you are outside of the circle</p>
+    </div>
+
+
+
+    
+
+    <!-- =========================== -->
+    <!-- ========== Basic ========== -->
+    <!-- =========================== -->
+    <script src="./basic.js"></script>
+
+
+    <!-- =========================== -->
+    <!-- ====== Intermediate ======= -->
+    <!-- =========================== -->
+    <script src="./intermediate.js"></script>
+
+
+    <!-- =========================== -->
+    <!-- ====== Intermediate ======= -->
+    <!-- =========================== -->
+    <script src="./advanced.js"></script>
+</body>
+</html>
