@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#menu {
+  width: 300px;
+  margin-left: -300px;
+  background-color: gray;
+  height: 90vh;
+  transition: all 1s;
+}
+
+a {
+  text-decoration: none;
+}
