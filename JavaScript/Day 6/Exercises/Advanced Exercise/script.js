@@ -28,7 +28,7 @@ fetch('./list.json')
                         <div class="card-body">
                         <h5 class="card-title">${val.title}</h5>
                         <p class="card-text">${val.author}</p>
-                        <a href="${val.buy}" class="btn btn-primary btnRemoveDetails">Go and buy it!</a>
+                        <a href="${val.buy}" target=”_blank” class="btn btn-primary btnRemoveDetails">Go and buy it!</a>
                         </a>
                     </button>
                         </div>
