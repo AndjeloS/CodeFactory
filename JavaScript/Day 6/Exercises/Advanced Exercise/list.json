@@ -1,0 +1,48 @@
+{
+    "booklist": {
+        "data": [
+            {
+                "title": "Javascript for Dummies",
+                "author": "Dummy Dumb Dumb",
+                "read": false,
+                "img": "https://i.ebayimg.com/images/g/tgAAAOSwsS9fir0d/s-l960.jpg",
+                "buy": "https://www.ebay.de/itm/193713110387?chn=ps&_ul=DE&_trkparms=ispr%3D1&amdata=enc%3A1Ghs2fX8yQsOo3Vwt8HhjSg43&norover=1&mkevt=1&mkrid=707-168914-907737-8&mkcid=2&itemid=193713110387&targetid=293946777986&device=c&mktype=pla&googleloc=9062727&poi=&campaignid=20354691798&mkgroupid=151907125395&rlsatarget=pla-293946777986&abcId=&merchantid=137586159&gad_source=1&gclid=CjwKCAjwvIWzBhAlEiwAHHWgvYytdF9N_TyMrMNuaIqg0kAqO0RiNMs0t_uAjMQzwIP3wiX38hmaqBoCeRoQAvD_BwE"
+            },
+            {
+                "title": "CSS for Dummies",
+                "author": "Dummy Dumb Dumb",
+                "read": true,
+                "img": "https://i.ebayimg.com/images/g/YQoAAOSw4p9lWu0w/s-l1600.webp",
+                "buy": "https://www.ebay.co.uk/itm/305574337203?chn=ps&_ul=GB&_trkparms=ispr%3D1&amdata=enc%3A1Hmhm4OjIRXuHTR4sFxOGJw31&norover=1&mkevt=1&mkrid=710-170020-547209-2&mkcid=2&itemid=305574337203&targetid=293946777986&device=c&mktype=pla&googleloc=9062727&poi=&campaignid=20784045347&mkgroupid=157398042404&rlsatarget=pla-293946777986&abcId=&merchantid=101729981&gad_source=1&gclid=CjwKCAjwvIWzBhAlEiwAHHWgvW0YRsFdDT6lgegsLcFbOw_X3zUPjRoRcV6mcy38Pn0qq4GaFWLZuxoCdP4QAvD_BwE"
+            },
+            {
+                "title": "HTML for Dummies",
+                "author": "Dummy Dumb Dumb",
+                "read": true,
+                "img": "https://images.thalia.media/00/-/68990a03fa0849a69f0112e15faee5f0/html5-schnelleinstieg-fuer-dummies-taschenbuch-andy-harris.jpeg",
+                "buy": "https://www.medimops.de/andy-harris-html5-schnelleinstieg-fuer-dummies-fur-dummies-taschenbuch-M03527709002.html?variant=UsedGood&creative=&sitelink=&gclid=CjwKCAjwvIWzBhAlEiwAHHWgvTv0uJPimWg4P8WKId259acUR-bf5RAe6w7N1N2UKPymJCvkgzWapRoCcFIQAvD_BwE&gad_source=1"
+            },
+            {
+                "title": "Bootstrap for Dummies",
+                "author": "Dummy Dumb Dumb",
+                "read": true,
+                "img": "https://m.media-amazon.com/images/I/41de4zHO9LL._SY445_SX342_.jpg",
+                "buy": "https://www.amazon.de/Practical-Bootstrap-Develop-Responsively-Frameworks/dp/1484260708/ref=asc_df_1484260708/?tag=googshopde-21&linkCode=df0&hvadid=474185610463&hvpos=&hvnetw=g&hvrand=5421564146617149586&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062727&hvtargid=pla-944267913761&psc=1&mcid=1135ba03e30639fda98e9fa0dd889eb1&th=1&psc=1"
+            },
+            {
+                "title": "PHP for Dummies",
+                "author": "Dummy Dumb Dumb",
+                "read": false,
+                "img": "https://images2.medimops.eu/product/2ada26/M03527705643-large.jpg",
+                "buy": "https://www.medimops.de/christian-baun-php-fuer-dummies-fur-dummies-taschenbuch-M03527705643.html?variant=UsedGood&creative=&sitelink=&gclid=CjwKCAjwvIWzBhAlEiwAHHWgvVzhpYNGV-84g3b_KBR-GpdgVa8B0Iv-RwsXMglVTGjZzVYAas4RvRoCvmIQAvD_BwE&gad_source=1"
+            },
+            {
+                "title": "SQL for Dummies",
+                "author": "Dummy Dumb Dumb",
+                "read": false,
+                "img": "https://m.media-amazon.com/images/I/51WQG6JTBDL._SY445_SX342_.jpg",
+                "buy": "https://www.medimops.de/taylor-allen-g-sql-fuer-dummies-sondereinband-M03826629310.html?variant=UsedGood&creative=&sitelink=&gclid=CjwKCAjwvIWzBhAlEiwAHHWgvf_yZrhywGibVuGIl7uqzFt3P4COSc85vsFwN_i4IkEZ0s2CqHw3choCOEoQAvD_BwE&gad_source=1"
+            }
+        ]
+    }
+}
