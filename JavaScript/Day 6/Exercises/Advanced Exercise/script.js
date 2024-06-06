@@ -1,9 +1,9 @@
-
+// if you use fetch you have to handle the data immediately. you cant store data from fetch
 fetch('./list.json')
     .then(function (response) {
         return response.json()
     }).then(function (result) {
-        for (let val of result.booklist.data
+        for (let val of result.booklist.data // to specify where the data should come from
         ) {
             document.getElementById("result").innerHTML += `<div>
             <div class="card" style="width: 18rem;">
