@@ -35,14 +35,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active fs-4" aria-current="page" href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link fs-4" href="#">Shop</a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle fs-4"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -50,16 +52,61 @@
                 >
                   About
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Impressum</a></li>
-                  <li><a class="dropdown-item" href="#">Contact</a></li>
+                <ul class="dropdown-menu nav-about">
+                  <li>
+                    <a class="dropdown-item text-light" href="#">Impressum</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="#">Contact</a>
+                  </li>
                 </ul>
               </li>
             </ul>
-            <div class="d-flex"></div>
+          </div>
+          <div class="d-flex">
+            <button
+              class="btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <img
+                class="shop-cart-img"
+                src="Images/Symbol/shopping-cart.png"
+                alt=""
+              />
+            </button>
           </div>
         </div>
       </nav>
+    </div>
+
+    <div class="shopping-cart">
+      <div
+        class="offcanvas offcanvas-start cart-sidebar"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div id="cart"></div>
+          <p class="text-center h2" id="total"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row row-cols-3" id="shop-item"></div>
     </div>
 
     <script
@@ -67,6 +114,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="JS/shoplist.js"></script>
     <script src="JS/script.js"></script>
   </body>
 </html>
