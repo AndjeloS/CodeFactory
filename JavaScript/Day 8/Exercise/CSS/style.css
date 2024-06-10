@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Website Header */
+.logo {
+  width: 10vw;
+  height: 8vw;
+}
+
+.mynav {
+  /* background-color: #b4d2e7; */
+  background-image: url("Images/Shop/Header-Background.jpg");
+  background-size: cover;
+  min-height: 100px;
+  max-width: 1600px !important; /*in case of a xxl screen*/
+  margin: 0 auto;
+}
