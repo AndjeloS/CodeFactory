@@ -33,6 +33,8 @@
 .shop-item-img {
   height: 16rem;
 }
+
+/* Shopping Cart */
 .offcanvas,
 .offcanvas-xxl,
 .offcanvas-xl,
@@ -49,4 +51,7 @@
   --bs-offcanvas-border-width: 6px;
   --bs-offcanvas-border-color: green;
   --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.checkout {
+  width: 6rem;
 }
