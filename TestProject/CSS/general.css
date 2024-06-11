@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, "Open Sans", sans-serif !important;
+}
+
+.head_menu {
+  margin: 0 auto;
+  max-width: 1120px;
+  margin-top: 2px;
+  position: relative;
+  top: 5px;
+}
+.nav-color {
+  color: whitesmoke;
+}
+.nav-color:hover {
+  color: red !important;
+}
