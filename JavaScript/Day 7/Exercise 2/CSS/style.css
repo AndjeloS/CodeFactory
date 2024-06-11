@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Website Header */
+.logo {
+  width: 10vw;
+  height: 8vw;
+  opacity: 0.7;
+}
+
+.mynav {
+  background-image: url("../Images/Shop/Header-Background.jpg");
+  background-size: cover;
+  min-height: 100px;
+  max-width: 1600px !important; /*in case of a xxl screen*/
+  margin: 0 auto;
+}
+
+.nav-about {
+  background-color: rgba(0, 0, 0, 0.31);
+}
+
+.shop-cart-img {
+  height: 3vw;
+  width: 3vw;
+}
+
+/* Body */
+
+.shop-item-img {
+  height: 16rem;
+}
+
+.productTitle {
+  width: 85%;
+  margin: 3px auto;
+}
+
+/* Shopping Cart */
+.offcanvas,
+.offcanvas-xxl,
+.offcanvas-xl,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm {
+  --bs-offcanvas-zindex: 1045;
+  --bs-offcanvas-width: 600px;
+  --bs-offcanvas-height: 30vh;
+  --bs-offcanvas-padding-x: 3rem;
+  --bs-offcanvas-padding-y: 2rem;
+  --bs-offcanvas-color: green;
+  --bs-offcanvas-bg: #fff;
+  --bs-offcanvas-border-width: 6px;
+  --bs-offcanvas-border-color: green;
+  --bs-offcanvas-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.checkout {
+  width: 6rem;
+}
