@@ -1,0 +1,7 @@
+All in Terminal:
+
+to create a ts file an make a js file out of it
+        tsc script.ts -w
+
+to create tsconfig.json
+        tsc --init
