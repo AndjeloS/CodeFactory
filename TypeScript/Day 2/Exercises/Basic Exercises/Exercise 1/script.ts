@@ -29,4 +29,6 @@ class Person implements IPerson {
 }
 
 let p1 = new Person("John", "Doe", 24, "Programmer");
-console.log(p1.printInfo());
+let result = document.getElementById("result") as HTMLElement;
+
+result.innerHTML += `${p1.printInfo()}`;
