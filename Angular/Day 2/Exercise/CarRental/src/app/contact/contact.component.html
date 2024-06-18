@@ -1,7 +1,7 @@
 <div class="contact-form">
   <div>
     <form
-      [formGroup]="profileForm"
+      [formGroup]="info"
       (ngSubmit)="onSubmit()"
       class="row row-cols-2 row-gap-2"
     >
@@ -77,8 +77,13 @@
           value="Submit Contact Form"
           class="mt-4"
           style="width: 12rem"
+          [disabled]="!info.valid"
         />
       </div>
+
+      <br />
+
+      <div id="result"></div>
     </form>
   </div>
 </div>

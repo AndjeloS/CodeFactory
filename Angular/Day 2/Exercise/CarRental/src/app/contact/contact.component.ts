@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -7,16 +7,18 @@ import { FormGroup, FormControl } from '@angular/forms';
   styleUrl: './contact.component.css',
 })
 export class ContactComponent {
-  profileForm = new FormGroup({
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    age: new FormControl(''),
-    address: new FormControl(''),
-    pnumber: new FormControl(''),
-    mailaddress: new FormControl(''),
+  info = new FormGroup({
+    firstName: new FormControl('', Validators.required),
+    lastName: new FormControl('', Validators.required),
+    age: new FormControl('', Validators.required),
+    address: new FormControl('', Validators.required),
+    pnumber: new FormControl('', Validators.required),
+    mailaddress: new FormControl('', Validators.required),
   });
   onSubmit() {
     // TODO: Use EventEmitter with form value
-    console.warn(this.profileForm.value);
+    if (this.info.valid) {
+      console.log(this.info.value);
+    }
   }
 }
