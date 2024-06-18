@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row row-cols-3 row-gap-3 mt-3">
+    @for (val of cars; track val.name) {
+    <div>
+      <div class="card" style="width: 18rem; height: 25rem">
+        <img
+          src="{{ val.img }}"
+          class="card-img-top"
+          alt="..."
+          style="width: 18rem"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ val.name }}</h5>
+          <p class="card-text">{{ val.price }}€</p>
+        </div>
+        <a routerLink="" class="btn btn-primary">Put in cart</a>
+      </div>
+    </div>
+    }
+  </div>
+</div>

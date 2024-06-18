@@ -1,0 +1,9 @@
+.donate {
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  background-color: rgba(177, 177, 177, 0.699);
+  padding: 3px;
+  border: 2px solid black;
+  border-radius: 25px;
+}

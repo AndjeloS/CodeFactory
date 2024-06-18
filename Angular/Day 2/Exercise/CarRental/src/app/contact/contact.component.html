@@ -1,0 +1,84 @@
+<div class="contact-form">
+  <div>
+    <form
+      [formGroup]="profileForm"
+      (ngSubmit)="onSubmit()"
+      class="row row-cols-2 row-gap-2"
+    >
+      <div>
+        <label for="first-name" style="min-width: 8rem">First Name: </label>
+        <input
+          id="first-name"
+          type="text"
+          formControlName="firstName"
+          class="me-5"
+          style="min-width: 22rem"
+        />
+      </div>
+      <div>
+        <label for="last-name" style="min-width: 8rem">Last Name: </label>
+        <input
+          id="last-name"
+          type="text"
+          formControlName="lastName"
+          style="min-width: 22rem"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="age" style="min-width: 8rem">Age: </label>
+        <input
+          id="age"
+          type="number"
+          formControlName="age"
+          class="me-5"
+          style="min-width: 22rem"
+        />
+      </div>
+      <div>
+        <label for="address" style="min-width: 8rem">Address: </label>
+        <input
+          id="address"
+          type="text"
+          formControlName="address"
+          style="min-width: 22rem"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="p-number" style="min-width: 8rem">Phone Number: </label>
+        <input
+          id="p-number"
+          type="tel"
+          formControlName="pnumber"
+          class="me-5"
+          style="min-width: 22rem"
+        />
+      </div>
+      <div>
+        <label for="mail-address" style="min-width: 8rem">Mail-Address: </label>
+        <input
+          id="mail-address"
+          type="email"
+          formControlName="mailaddress"
+          style="min-width: 22rem"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <input
+          type="submit"
+          value="Submit Contact Form"
+          class="mt-4"
+          style="width: 12rem"
+        />
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light" routerLink="/">Car Rent</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link active text-light"
+            aria-current="page"
+            routerLink="/"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="/about">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="/contact">Contact us</a>
+        </li>
+      </ul>
+    </div>
+    @if (count >= 200){
+    <span class="me-3"><img src="./crown.png" alt="You are a VIP now!" /></span>
+    }
+    <a class="btn btn-secondary" (click)="increaseDonate()">Donate 10€</a>
+    <span class="ms-4"
+      ><div class="donate">{{ count }}€</div></span
+    >
+  </div>
+</nav>

@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url("https://media.istockphoto.com/id/954746932/de/foto/der-verkehr-auf-einer-autobahn-bei-sonnenuntergang.jpg?s=2048x2048&w=is&k=20&c=B5bBhaPwUrBzjlPYKyLTN-QB20GkDyriAUvLCjyP0ZU=");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgb(0, 0, 0);
+  border: 1px black solid;
+}
