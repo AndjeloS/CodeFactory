@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-dark">
-  <div class="container-fluid">
+  <div class="container-fluid justify-content-between">
     <a class="navbar-brand text-light" routerLink="/">Car Rent</a>
     <button
-      class="navbar-toggler"
+      class="bg-secondary navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNav"
@@ -13,7 +13,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav me-5">
         <li class="nav-item">
           <a
             class="nav-link active text-light"
@@ -29,13 +29,15 @@
           <a class="nav-link text-light" routerLink="/contact">Contact us</a>
         </li>
       </ul>
+      <div class="d-flex ms-5">
+        <a class="btn btn-secondary" (click)="increaseDonate()">Donate 10€</a>
+        <div class="donate ms-4">{{ count }}€</div>
+        @if (count >= 200){
+        <span class="ms-3"
+          ><img src="./crown.png" alt="You are a VIP now!"
+        /></span>
+        }
+      </div>
     </div>
-    @if (count >= 200){
-    <span class="me-3"><img src="./crown.png" alt="You are a VIP now!" /></span>
-    }
-    <a class="btn btn-secondary" (click)="increaseDonate()">Donate 10€</a>
-    <span class="ms-4"
-      ><div class="donate">{{ count }}€</div></span
-    >
   </div>
 </nav>
