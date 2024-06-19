@@ -1,0 +1,13 @@
+.rent {
+  min-height: 100vh;
+}
+
+.card {
+  width: 95%;
+  margin: 15px auto;
+}
+
+.add-car {
+  border-top: 2px solid black;
+  min-height: 30vh;
+}

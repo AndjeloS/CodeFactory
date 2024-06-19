@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-list',
@@ -6,6 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './list.component.css',
 })
 export class ListComponent {
+  info = new FormGroup({
+    name: new FormControl('', Validators.required),
+    price: new FormControl('', Validators.required),
+    days: new FormControl('', Validators.required),
+    img: new FormControl('', Validators.required),
+  });
+
   cars: { name: string; price: number; days: number; img: any }[] = [
     {
       name: `Kia Sportage`,
@@ -38,4 +46,11 @@ export class ListComponent {
       img: `https://cdn2.rcstatic.com/images/car_images_b/web/mercedes/e_class_estate_lrg.jpg`,
     },
   ];
+
+  onSubmit() {
+    // TODO: Use EventEmitter with form value
+    if (this.info.valid) {
+      console.log(this.info.value);
+    }
+  }
 }
