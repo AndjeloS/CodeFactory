@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url("/Webpage-Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgb(0, 0, 0);
+  border: 1px black solid;
+}
