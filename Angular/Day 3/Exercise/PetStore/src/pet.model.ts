@@ -12,7 +12,7 @@ export interface IPet {
 export class petModel {
   constructor(
     public name: string,
-    public birthYear: number,
+    public birthYear: string,
     public image: string,
     public age: number,
     public price: number,
