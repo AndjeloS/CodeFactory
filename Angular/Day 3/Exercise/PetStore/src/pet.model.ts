@@ -7,6 +7,7 @@ export interface IPet {
   price: number;
   race: string;
   raceType: string;
+  gender: string;
   descr: string;
 }
 
@@ -20,6 +21,7 @@ export class petModel {
     public price: number,
     public race: string,
     public raceType: string,
+    public gender: string,
     public descr: string
   ) {}
 }
