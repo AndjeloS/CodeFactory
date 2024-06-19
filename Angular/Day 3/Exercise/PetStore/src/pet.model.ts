@@ -8,7 +8,6 @@ export interface IPet {
   race: string;
   raceType: string;
   descr: string;
-  reserved: boolean;
 }
 
 export class petModel {
@@ -21,7 +20,6 @@ export class petModel {
     public price: number,
     public race: string,
     public raceType: string,
-    public descr: string,
-    public reserved: boolean
+    public descr: string
   ) {}
 }
