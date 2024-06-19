@@ -1,6 +1,6 @@
 export interface IPet {
   name: string;
-  birthYear: number;
+  birthYear: string;
   image: string;
   age: number;
   price: number;
