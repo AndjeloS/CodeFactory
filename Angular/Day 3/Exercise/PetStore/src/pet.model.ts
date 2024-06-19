@@ -3,8 +3,10 @@ export interface IPet {
   birthYear: string;
   image: string;
   age: number;
+  lifeSpan: string;
   price: number;
   race: string;
+  raceType: string;
   descr: string;
   reserved: boolean;
 }
@@ -15,8 +17,10 @@ export class petModel {
     public birthYear: string,
     public image: string,
     public age: number,
+    public lifeSpan: string,
     public price: number,
     public race: string,
+    public raceType: string,
     public descr: string,
     public reserved: boolean
   ) {}
