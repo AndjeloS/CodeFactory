@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { DetailsComponent } from './details/details.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: 'blog',
+  },
+  {
+    path: 'details/:index',
+    component: DetailsComponent,
   },
 ];
 
