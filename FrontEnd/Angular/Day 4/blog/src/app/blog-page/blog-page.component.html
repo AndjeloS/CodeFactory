@@ -1,1 +1,30 @@
-<div class="container blog"></div>
+<div class="container blog">
+  <section class="mt-5">
+    <h1>Trending Blogs:</h1>
+    <div
+      class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 row-gap-3 mt-4"
+    >
+      @for(blog of blogs; track blog; let i = $index){
+      <div class="p2">
+        <div class="card p-2">
+          <div>
+            <img
+              [src]="blog.profileImage"
+              class="profile-image"
+              alt="{{ blog.username }}"
+            />
+            <p>Creator: {{ blog.username }}</p>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ blog.topic }}</h5>
+            <p class="card-text">{{ blog.postDate }} {{ blog.postTime }}</p>
+            <!-- <a routerLink="/details/{{ i }}" class="btn btn-primary"
+              >See blog!</a
+            > -->
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </section>
+</div>
