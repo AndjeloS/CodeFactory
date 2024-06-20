@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { BlogPageComponent } from './blog-page/blog-page.component';
+import { HomeComponent } from './blog-page/blog-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { DetailsComponent } from './details/details.component';
 
@@ -16,15 +16,12 @@ import { DetailsComponent } from './details/details.component';
     NavbarComponent,
     AboutComponent,
     ContactComponent,
-    BlogPageComponent,
+    HomeComponent,
     FooterComponent,
-    DetailsComponent
+    DetailsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
