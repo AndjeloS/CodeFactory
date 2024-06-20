@@ -8,7 +8,7 @@ import { IBlog, blogModel } from './blog-model';
 //     blog: string;
 //     likes: number;
 
-export const pets: IBlog[] = [
+export const blogs: IBlog[] = [
   {
     topic: 'Price of Food',
     username: 'Jimmy Bill Bob',
