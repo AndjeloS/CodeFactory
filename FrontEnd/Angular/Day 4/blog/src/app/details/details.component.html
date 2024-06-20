@@ -1,41 +1,26 @@
 <div class="container details">
-  <div class="card my-5" style="width: 100%">
-    <div>
-      <img
-        [src]="blog.profileImage"
-        class="profile-image"
-        alt="{{ blog.username }}"
-      />
-      <span class="ms-4">Creator: {{ blog.username }}</span>
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- <div class="p2">
-  <div class="card p-2">
-    <div>
-      <img
-        [src]="blog.profileImage"
-        class="profile-image"
-        alt="{{ blog.username }}"
-      />
-      <span class="ms-4">Creator: {{ blog.username }}</span>
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">{{ blog.topic }}</h5>
-      <div class="d-flex p-2 justify-content-between">
-        <p class="card-text">Added: {{ blog.postDate }} {{ blog.postTime }}</p>
-        <p class="card-text">
-          Likes: <span class="badge bg-success">{{ blog.likes }}</span>
-        </p>
+  <div class="p2">
+    <div class="card p-2">
+      <div>
+        <img
+          [src]="blog.profileImage"
+          class="profile-image"
+          alt="{{ blog.username }}"
+        />
+        <span class="ms-4">Creator: {{ blog.username }}</span>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ blog.topic }}</h5>
+        <p class="card-text">{{ blog.blog }}</p>
+        <div class="d-flex p-2 justify-content-between">
+          <p class="card-text">
+            Added: {{ blog.postDate }} {{ blog.postTime }}
+          </p>
+          <p class="card-text">
+            Likes: <span class="badge bg-success">{{ blog.likes }}</span>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div> -->
+</div>

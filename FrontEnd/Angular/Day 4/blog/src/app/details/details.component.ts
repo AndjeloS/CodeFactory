@@ -14,7 +14,8 @@ export class DetailsComponent {
 
   constructor(private route: ActivatedRoute) {
     this.blogs = blogs;
-    const id = +this.route.snapshot.params['index'];
+    const id = +this.route.snapshot.params['id'];
     this.blog = this.blogs[id];
+    console.log(this.blog);
   }
 }
