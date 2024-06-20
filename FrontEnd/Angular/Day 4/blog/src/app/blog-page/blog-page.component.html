@@ -13,14 +13,19 @@
               class="profile-image"
               alt="{{ blog.username }}"
             />
-            <p>Creator: {{ blog.username }}</p>
+            <span class="ms-4">Creator: {{ blog.username }}</span>
           </div>
           <div class="card-body">
             <h5 class="card-title">{{ blog.topic }}</h5>
-            <p class="card-text">{{ blog.postDate }} {{ blog.postTime }}</p>
-            <!-- <a routerLink="/details/{{ i }}" class="btn btn-primary"
-              >See blog!</a
-            > -->
+            <div class="d-flex p-2 justify-content-between">
+              <p class="card-text">
+                Added: {{ blog.postDate }} {{ blog.postTime }}
+              </p>
+              <p class="card-text">
+                Likes: <span class="badge bg-success">{{ blog.likes }}</span>
+              </p>
+            </div>
+            <a routerLink="/details" class="btn btn-primary">See blog!</a>
           </div>
         </div>
       </div>
