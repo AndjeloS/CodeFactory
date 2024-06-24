@@ -1,0 +1,28 @@
+ng new Projectname --no-standalone
+-- creates an angular project
+
+
+
+Should be done in VS Code Terminal:
+
+ng serve
+--creates a local angular server
+	--has to be entered in the root folder of the project
+
+ng build
+--compiles everything in htm, js, and css so the browser can understand it and compress it in a more manageble size.
+	--has to be entered in the root folder of the project
+
+
+ng generate component home-page
+	--ng g c componentName (short version)
+		--will create a component in the project
+			--componentName.component.html
+			componentName.component.css
+			componentName.component.ts
+			componentName.component.spec.ts
+npm i bootstrap
+	--installs bootstrap for the project
+		-- path has to be added in angular.json
+			styles (node_modules/bootstrap/dist/css/bootstrap.min.css)
+			script (node_modules/bootstrap/dist/js/bootstrap.bundle.js)

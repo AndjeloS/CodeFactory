@@ -1,0 +1,18 @@
+<section class="container mt-5">
+  <div
+    class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 row-gap-3"
+  >
+    @for(pet of pets; track pet; let i = $index){
+    <div class="p2">
+      <div class="card p-2">
+        <img [src]="pet.image" class="card-img-top" alt="{{ pet.name }}" />
+        <div class="card-body">
+          <h5 class="card-title">{{ pet.name }}</h5>
+          <p class="card-text">{{ pet.price }} $</p>
+          <a routerLink="/details/{{ i }}" class="btn btn-primary">Details</a>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</section>

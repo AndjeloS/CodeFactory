@@ -1,0 +1,122 @@
+import { IPet, petModel } from './pet.model';
+
+export const pets: IPet[] = [
+  // {
+  //     name: '',
+  //     birthYear: '',
+  //     image: '/pets/',
+  //     age: ,
+  //     lifeSpan: '',
+  //     price: ,
+  //     race: '',
+  //     raceType: '',
+  //     gender:'',
+  //     descr:
+  //       '',
+  //   },
+
+  {
+    name: 'Dexter',
+    birthYear: '20.08.2014',
+    image: '/pets/french-bulldog.jpg',
+    age: 9,
+    lifeSpan: '10-12 years',
+    price: 2300,
+    race: 'Dog',
+    raceType: 'French Bulldog',
+    gender: 'Male',
+    descr:
+      'Frenchies are good for apartment life. They can be fairly active indoors and will do okay without a yard. They do not do well in temperature extremes.',
+  },
+  {
+    name: 'Charlie',
+    birthYear: '14.02.2019',
+    image: '/pets/pembroke-welsh-corgi.jpg',
+    age: 5,
+    lifeSpan: '12-14 years',
+    price: 1400,
+    race: 'Dog',
+    raceType: 'Pembroke Welsh Corgi',
+    gender: 'Male',
+    descr:
+      'Corgis will do fine in an apartment if they are sufficiently exercised. With enough exercise they can be calm indoors, but will be very active if they are lacking. Will do okay without a yard so long as they are taken for daily walks.',
+  },
+  {
+    name: 'Bailey',
+    birthYear: '05.07.2017',
+    image: '/pets/golden-retriever.jpg',
+    age: 6,
+    lifeSpan: '10-12 years',
+    price: 1800,
+    race: 'Dog',
+    raceType: 'Golden Retriever',
+    gender: 'Female',
+    descr:
+      'This breed will do okay in an apartment if sufficiently exercised. They are moderately active indoors and will do best with at least a medium to large yard.',
+  },
+  {
+    name: 'Luna',
+    birthYear: '28.04.2014',
+    image: '/pets/german-shepherd.jpg',
+    age: 10,
+    lifeSpan: '10-13',
+    price: 1000,
+    race: 'Dog',
+    raceType: 'German Shepherd Dog',
+    gender: 'Female',
+    descr:
+      'The German Shepherd will do okay in an apartment if sufficiently exercised. They are relatively inactive indoors and do best with at least a large yard.',
+  },
+  {
+    name: 'Leo',
+    birthYear: '24.05.2021',
+    image: '/pets/maine-coon.jpg',
+    age: 3,
+    lifeSpan: '10-13',
+    price: 1200,
+    race: 'Cat',
+    raceType: 'Maine Coon',
+    gender: 'Male',
+    descr:
+      'Maine Coon cats are gentle natured and friendly, making them good companions. They are often tenderly playful and curious, making them kitten-like throughout their lives.',
+  },
+  {
+    name: 'Lily',
+    birthYear: '12.03.2019',
+    image: '/pets/Chartreux.jpg',
+    age: 5,
+    lifeSpan: '12-15',
+    price: 1800,
+    race: 'Cat',
+    raceType: 'Chartreux',
+    gender: 'Female',
+    descr:
+      'This sturdy, powerful cat has a distinctive blue coat with a resilient wooly undercoat. Historically known as fine mousers with strong hunting instincts, the Chartreux enjoys toys that move. This is a slow-maturing breed that reaches adulthood in three to five years. A loving, gentle companion, the Chartreux forms a close bond with her family.',
+  },
+  {
+    name: 'Jack',
+    birthYear: '05.01.2023',
+    image: '/pets/American Bobtail.jpg',
+    age: 1,
+    lifeSpan: '13-15',
+    price: 750,
+    race: 'Cat',
+    raceType: 'American Bobtail',
+    gender: 'Male',
+    descr:
+      'The American Bobtail bears a distinct resemblance to a bobtailed wildcat. From her markings and alert, hunter’s gaze to her short, expressive tail, her appearance suggests a scaled-down version of that wild cat.',
+  },
+  {
+    name: 'Chloe',
+    birthYear: '28.09.2018',
+    image: '/pets/LaPerm.jpg',
+    age: 5,
+    lifeSpan: '10-15',
+    price: 1000,
+    race: 'Cat',
+    raceType: 'LaPerm',
+    gender: 'Female',
+    descr:
+      'Distinguished by her curly, rippled coat and people-oriented personality, the LaPerm is calm and friendly, yet at other times energetic and inquisitive. This feline thrives on attention and likes to be close to her human companions. Though curious, this breed is content to be a lap cat and close to whatever is going on. The LaPerm blossoms with a loving family.',
+  },
+];

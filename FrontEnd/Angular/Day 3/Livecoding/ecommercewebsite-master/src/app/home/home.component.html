@@ -1,0 +1,20 @@
+<section>
+  <div class="my-5 row row-cols-3">
+    @for(car of cars; track car; let i = $index){
+        <div class="p2">
+            <div class="card p-2">
+              <img [src]="car.image" class="card-img-top" alt="{{ car.model }}" />
+              <div class="card-body">
+                <h5 class="card-title">{{ car.model }}</h5>
+                <p class="card-text">
+                  {{ car.price }}
+                </p>
+                <a routerLink="/details/{{i}}" class="btn btn-primary">details</a>
+              </div>
+            </div>
+          </div>
+    }
+    
+  </div>
+  <button>submit</button>
+</section>

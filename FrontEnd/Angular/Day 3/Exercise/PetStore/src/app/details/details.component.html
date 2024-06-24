@@ -1,0 +1,17 @@
+<div class="container details bg-light-subtle">
+  <h2>{{ pet.name }}</h2>
+  <hr />
+  <img height="300" [src]="pet.image" alt="" />
+  <hr />
+  <p>Cost: {{ pet.price }} $</p>
+  <p>Born: {{ pet.birthYear }} / Age: {{ pet.age }}</p>
+  <p>Gender: {{ pet.gender }}</p>
+  <hr />
+  <p>Race: {{ pet.race }}</p>
+  <p>Type: {{ pet.raceType }}</p>
+  <hr />
+  <p>Description:</p>
+  <p>{{ pet.descr }}</p>
+  <hr />
+  <button (click)="addToCart()">add to Cart!</button>
+</div>
