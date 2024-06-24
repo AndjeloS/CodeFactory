@@ -1,4 +1,4 @@
-ng new Projectname--no-standalone
+ng new Projectname --no-standalone
 -- creates an angular project
 
 
