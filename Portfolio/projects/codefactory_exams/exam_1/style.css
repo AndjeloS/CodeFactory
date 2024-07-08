@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+:root {
+    --headerFontSize:  clamp(12px, 2vw, 28px);
+    --logoFontSize: clamp(20px, 2vw, 50px);
+    --headerImage: clamp(12px, 2vw, 28px);
+    --navFontSize: clamp(8px, 2vw, 28px);
+    --pageTextSize: clamp(8px, 2vw, 14px);
+    --pageHeaderSize: clamp(12px, 2vw, 18px);
+    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color:rgba(211, 231, 248, 0.575);
+}
+
+/* Header START */
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: var(--headerFontSize);
+  padding-bottom: 15px;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header img {
+  width: 25px;
+}
+.page-logo {
+    display: flex;
+    align-items: center;
+    font-size: var(--logoFontSize);
+    font-family: "Dancing Script", cursive;
+    
+}
+
+.header-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5%;
+    gap: 40px;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Header END */
+
+/* Navbar START */
+
+.navbar{
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  border-bottom: 2px solid black;
+  border-top: 2px solid;
+  width: 100%;
+
+
+}
+
+.navbar .nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+
+}
+
+/* Navbar END */
+
+/* Page Body START */
+
+.recipe{
+    font-family: sans-serif;
+    width: 90%;
+    margin: 25px;
+}
+
+.recipe h1{
+    text-align: center;
+}
+
+.recipe-head{
+    border-bottom: 1px solid black;
+}
+
+.recipe-info{
+    margin-top: 15px;
+    width:90%;
+}
+
+.recipe-info h4{
+    font-size: var(--pageHeaderSize);
+}
+
+.recipe-about{
+    width: 80%;
+    margin: 2px auto;
+    text-align: justify;
+}
+.recipe-img{
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 15%;
+
+}
+.recipe-about p{
+    padding-top: 15px;
+}
+
+.recipe-about ol{
+    display: flex;
+    padding-top: 15px;
+    flex-direction:column;
+}
+.recipe-time li{
+    list-style: none;
+    margin-top: 3px;
+}
+
+.ingredients{
+    width: 80%;
+    margin: 30px auto;
+    text-align: justify;
+}
+
+.ingredients li{
+    margin-left: 25px;
+    list-style:circle;
+}
+
+.ingredients h5{
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.ingredients-part1{
+    margin: 15px;
+}
+.ingredients-part2{
+    margin: 15px;
+}
+
+.recipe-part1{
+    border-bottom: 1px solid black;
+}
+
+.recipe-part1 h5{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.recipe-part1 li{
+    width: 70%;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+.recipe-part2{
+    border-bottom: 1px solid black;
+}
+
+.recipe-part2 h5{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.recipe-part2 li{
+    width: 70%;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+.recipe-part2 span{
+    font-weight: bold;
+}
+
+.page-end{
+    margin: 5% auto;
+    width: 90%;
+}
+
+.fooddb-info{
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.grid img{
+    width: 100%;
+    height: 100%;
+}
+
+.food-menu{
+    position: relative;
+}
+
+.food-menu p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 5px;
+    font-size: var(--navFontSize);
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+}
+
+
+@media screen  and (min-device-width: 360px) and (max-device-width: 950px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (min-device-width: 760px) and (max-device-width: 1280px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-device-width: 1280px) and (max-device-width: 1920px){
+    .recipe-img{
+        width: 50%;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
+
+/* Page Body END */
+
+/* Footer START */
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: relative;
+}
+
+.footer-links{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer-links a{
+    color: white;
+}
+
+.footer-links p{
+    width: 20px;
+}
+
+.socialmedia{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.socialmedia p{
+    width: 20px;
+}
+
+.copyright {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+    color: white;
+}
+
+/* Footer END */
