@@ -13,16 +13,15 @@ ng build
 --compiles everything in htm, js, and css so the browser can understand it and compress it in a more manageble size.
 	--has to be entered in the root folder of the project
 
-
-ng generate component home-page
-	--ng g c componentName (short version)
+	--ng g c componentName --skip-tests
 		--will create a component in the project
 			--componentName.component.html
 			componentName.component.css
 			componentName.component.ts
-			componentName.component.spec.ts
 npm i bootstrap
 	--installs bootstrap for the project
 		-- path has to be added in angular.json
 			styles (node_modules/bootstrap/dist/css/bootstrap.min.css)
 			script (node_modules/bootstrap/dist/js/bootstrap.bundle.js)
+
+if you pull a project from github you have to use npm i to create the module libraries
