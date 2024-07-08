@@ -1,0 +1,7 @@
+When doing the design of the database (in UML)
+
+attributes will be given a type
+
+id : int (id will get a int for number)
+description : varchart(length) (string type will get varchart() with the maximum lengt of the value)
+price : dezimal (will be given if the number has to be a dezimal)
