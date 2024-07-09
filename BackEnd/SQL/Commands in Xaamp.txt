@@ -1,0 +1,14 @@
+Create SQL Database Command
+    CREATE DATABASE Databasename
+
+Crete Table
+    CREATE TABLE Tablename (Column content and type like 
+        "id int AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(20), and so on)
+
+Deleting table
+DROP TABLE Tablename
+
+Change table 
+    ALTER TABLE Tablename 
+    ADD FOREIGN KEY(tableconten like table_id) REFERENCE(table_id) (connects table)
