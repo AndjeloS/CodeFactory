@@ -90,6 +90,15 @@ html,body{
 }
 
 .fix{position: relative;clear: both;}
+
+.section-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e5ebf2;
+    margin-top: 15px;
+}
 /*=============Style css=========*/
 
 /*-------------------------------------
