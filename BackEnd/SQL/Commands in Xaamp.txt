@@ -11,4 +11,4 @@ DROP TABLE Tablename
 
 Connect table 
     ALTER TABLE Tablename 
-    ADD FOREIGN KEY(tableconten like table_id) REFERENCE(table_id) (connects table)
+    ADD FOREIGN KEY(tableconten like table_id) REFERENCES (table_id) (connects table)
