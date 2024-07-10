@@ -9,6 +9,6 @@ Crete Table
 Deleting table
 DROP TABLE Tablename
 
-Change table 
+Connect table 
     ALTER TABLE Tablename 
     ADD FOREIGN KEY(tableconten like table_id) REFERENCE(table_id) (connects table)
