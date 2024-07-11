@@ -1,0 +1,49 @@
+1.
+COMMAND:
+SELECT COUNT(*) FROM employees . Answer is 300024
+SELECT COUNT(*) FROM titles; Answer is 443308
+SELECT COUNT(*) FROM salaries; Answer is 2844047
+SELECT COUNT(*) FROM dept_manager; Answer is 24
+SELECT COUNT(*) FROM dept_emp; Answer is 331603
+SELECT COUNT(*) FROM departments; Answer is 9
+
+2- SELECT COUNT(*) FROM employees WHERE first_name LIKE "%Mark"; Answer is "230"
+
+3- SELECT COUNT(*) FROM employees WHERE first_name LIKE "%Eric" AND last_name LIKE "A%"; Answer is 13
+
+4- SELECT COUNT(*) FROM employees WHERE hire_date BETWEEN "1985-01-01" AND "1985-12-31"; Answer is 35316
+SELECT employees.first_name, employees.last_name FROM employees WHERE hire_date BETWEEN "1985-01-01" AND "1985-12-31";
+
+5- SELECT COUNT(*) FROM employees WHERE hire_date BETWEEN "1990-01-01" AND "1997-12-31"; Answer is 129545
+SELECT employees.first_name, employees.last_name FROM employees WHERE hire_date BETWEEN "1990-01-01" AND "1997-12-31";
+
+6- SELECT COUNT(*) FROM employees WHERE emp_no IN ( SELECT emp_no FROM salaries WHERE salary > '70000' ); Answer is 135631
+SELECT * FROM employees WHERE emp_no IN ( SELECT emp_no FROM salaries WHERE salary > '70000' );
+Answer is 135631
+
+7-
+SELECT COUNT(*) FROM dept_emp de
+JOIN departments d ON de.dept_no = d.dept_no
+JOIN employees e ON e.emp_no = de.emp_no
+WHERE e.emp_no IN (SELECT e.emp_no FROM employees
+WHERE e.hire_date > "1992-01-01"
+AND d.dept_no ="d008"); Answer: 6141
+
+SELECT e.first_name from dept_emp de
+JOIN departments d ON de.dept_no = d.dept_no
+JOIN employees e ON e.emp_no = de.emp_no
+WHERE e.emp_no IN (SELECT e.emp_no FROM employees
+WHERE e.hire_date > "1992-01-01"
+AND d.dept_no ="d008")
+
+8-
+SELECT * FROM employees
+WHERE employees.emp_no IN (SELECT salaries.emp_no FROM salaries WHERE salaries.salary > "75000") AND employees.emp_no IN (SELECT dept_emp.emp_no FROM dept_emp WHERE dept_emp.dept_no = "d002" AND dept_emp.to_date > CURRENT_DATE) AND employees.hire_date >= "1985-01-01";
+
+
+
+
+
+
+
+
