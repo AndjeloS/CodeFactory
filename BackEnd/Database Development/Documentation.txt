@@ -3,5 +3,13 @@ When doing the design of the database (in UML)
 attributes will be given a type
 
 id : int (id will get a int for number)
-description : varchart(length) (string type will get varchart() with the maximum lengt of the value)
-price : dezimal (will be given if the number has to be a dezimal)
+description : varchar(length) (string type will get varchart() with the maximum lengt of the value)
+price : decimal (will be given if the number has to be a dezimal)
+
+
+create table tablename(
+    id int AUTO_INCREMENT PRIMARY KEY,
+    name varchar(120) not null,
+    price decimal(12, 2) not null,
+    picture varchar(255) not null
+)
