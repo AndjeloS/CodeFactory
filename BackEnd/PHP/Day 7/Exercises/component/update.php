@@ -2,6 +2,12 @@
 require_once "db_connection.php";
 require_once "file_upload_car.php";
 
+session_start();
+
+$userSql = "SELECT * FROM users WHERE id = " . $_SESSION["admin"];
+$userResult = mysqli_query($conn, $userSql);
+$userRow = mysqli_fetch_assoc($userResult);
+
 $id = $_GET["id"];
 $sql = "SELECT * from cars WHERE id = $id";
 $result = mysqli_query($conn, $sql);
@@ -55,9 +61,34 @@ if(isset($_POST["update"])){
         <title>Cars</title>
     </head>
     <body>
+
+
+<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid" style="width: 75%;">
+    <a class="navbar-brand text-white" href="../dashboard.php">Home</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img draggable="false" style="width: 30px;" class="me-3" src="../images/profile_pic/<?=$userRow["picture"] ?>" > <?= $userRow["first_name"] ?>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="component/logout.php?logout">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
         
     <div class="container">
-        <h1 class="mb-5">Update Rental</h1>
+        <h1 class="mb-5 mt-3">Update Rental</h1>
     
         <form method="POST" enctype="multipart/form-data">
             <input type="text" placeholder="Car name" class="form-control mb-2" name="name" value="<?= $row["name"] ?>">

@@ -1,6 +1,18 @@
 <?php
 
     require_once "component/db_connection.php";
+
+    session_start();
+
+    if(!isset($_SESSION["user"]) && isset($_SESSION["admin"])){
+        header("Location: index.php");
+        exit();
+    }
+    $userSql = "SELECT * FROM users WHERE id = " . $_SESSION["user"];
+    $userResult = mysqli_query($conn, $userSql);
+    $userRow = mysqli_fetch_assoc($userResult);
+
+
     $sql = "SELECT * FROM `cars`";
 
     $result = mysqli_query($conn, $sql);
@@ -23,6 +35,7 @@
                                 <p class=card-text>Price: {$row["price"]}€</p>
                                 <p class='card-text'>Manufacturer: {$row["manufacturer"]}</p>
                                 <p class='card-text'>Model: {$row["model"]}</p>
+                                <a href='component/details.php?id={$row["id"]}' class='btn btn-success'>Details</a>
                             </div>
                         </div>";
         }
@@ -45,7 +58,7 @@
 
 <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid" style="width: 75%;">
-    <a class="navbar-brand text-white" href="index.php">Home</a>
+    <a class="navbar-brand text-white" href="home.php">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -53,11 +66,11 @@
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img draggable="false" style="width: 20px;" src="images/navbar/navbar_user.png" >
+            <img draggable="false" style="width: 30px;" src="./images/profile_pic/<?= $userRow["picture"]?>" class="me-3" ><?= $userRow["first_name"] ?>
           </a>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="component/login.php">Login</a></li>
-            <li><a class="dropdown-item" href="component/register.php">Signup</a></li>
+            <li><a class="dropdown-item" href="component/profile.php">Profile</a></li>
+            <li><a class="dropdown-item" href="component/logout.php?logout">Logout</a></li>
           </ul>
         </li>
       </ul>

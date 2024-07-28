@@ -1,10 +1,22 @@
 <?php
+    session_start();
+    if(isset($_SESSION["user"])){
+      header("Location: home.php");
+      exit();
+    }
+
+    if(isset($_SESSION["admin"])){
+      header("Location: dashboard.php");
+      exit();
+    }
+
+    
 require_once "db_connection.php";
 require_once "file_upload_user.php";
 
 $error = false;
 
-$fname = $lname = $date_of_birth = $email = $password = $picture = '';
+$fname = $lname = $date_of_birth = $email = $password = $picture = $info = '';
 $fnameError = $lnameError = $date_of_birthError = $emailError = $passwordError = $pictureError = '';
 
 if(isset($_POST['btn-signup'])){
@@ -83,17 +95,18 @@ if(isset($_POST['btn-signup'])){
         $result = mysqli_query($conn, $sql);
 
         if($result){
-            echo "<div class='alert alert-success text-center' role='alert'>
+            $info = "<div class='alert alert-success text-center' role='alert'>
                         <h4 class='alert-heading'>Registration completed!</h4>
                         <p>You will be redirected in 3 seconds.</p>
                         <hr>
                         <p class='mb-0'>$picture[1]</p>
                     </div>";
             $fname = $lname = $date_of_birth = $email = '';
+            header("refresh: 3; url=../index.php");
 
         }else{
             #show error
-            echo "<div class='alert alert-danger text-center' role='alert'>
+            $info = "<div class='alert alert-danger text-center' role='alert'>
             <h3>Something went wrong, please try again!</h3>
             </div>";
         }  
@@ -139,6 +152,9 @@ if(isset($_POST['btn-signup'])){
   </div>
 </nav>
 
+<div>
+    <?= $info ?>
+</div>
 
     
 <div class="container mt-5">

@@ -1,5 +1,66 @@
 <?php
-require_once "db_connection.php";
+
+    session_start();
+    if(isset($_SESSION["user"])){
+      header("Location: home.php");
+      exit();
+    }
+
+    if(isset($_SESSION["admin"])){
+      header("Location: dashboard.php");
+      exit();
+    }
+
+
+    require_once "db_connection.php";
+
+
+    $error = false;
+    $email = $emailError = $passwordError = $info = "";
+    if(isset($_POST["login-btn"])){
+      $email = cleanInput($_POST["email"]);
+      $password = cleanInput($_POST["password"]);
+
+      if(empty($email)){
+        $error = true;
+        $emailError = "Email is required!";
+      }elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        $error = true;
+        $emailError = "Not a valid email!";
+      }
+
+
+      if(empty($password)){
+        $error = true;
+        $passwordError = "Password is required!";
+      }
+
+      if(!$error){
+        $password = hash("sha256", $password);
+
+        $sql = "SELECT * FROM `users` WHERE email = '$email' AND password = '$password'";
+        $result = mysqli_query($conn, $sql);
+        $row = mysqli_fetch_assoc($result);
+        if(mysqli_num_rows($result) == 1){
+            #you can login
+            #check whoever logged in is a user or admin
+            if($row["status"] =="admin"){
+              #send to dashboard
+              $_SESSION["admin"] = $row["id"];
+              header("Location: ../dashboard.php");
+            }else{
+              #send you to index
+              $_SESSION["user"] = $row["id"];
+              header("Location: ../home.php");
+            }
+        }else{
+          $info = "<div class='alert alert-danger text-center' role='alert'>
+            <h3>Incorrect credintials, please try again!</h3>
+            </div>";
+        }
+      }
+
+    }
 
 ?>
 
@@ -36,24 +97,27 @@ require_once "db_connection.php";
   </div>
 </nav>
 
+<div>
+  <?= $info ?>
+</div>
 
 
 <div class="container mt-5">
     <h1 class="w-50 mt-4 mx-auto">Login</h1>
 
-    <form action="" enctype="multipart/form-data" class="w-50 mt-4 mx-auto">
+    <form method="POST" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" enctype="multipart/form-data" class="w-50 mt-4 mx-auto" autocomplete="off">
         <div class="mb-3">
             <label for="mail" class="form-label">Mail Address:</label>
-            <input id="mail" type="text" class="form-control" name="mail" placeholder="Insert mail address" value="">
-            <p class="text-danger"></p>
+            <input id="mail" type="text" class="form-control" name="email" placeholder="something@example.com" value="<?= $email ?>">
+            <p class="text-danger"><?= $emailError ?></p>
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password:</label>
-            <input id="password" type="password" class="form-control" name="password" placeholder="Insert password">
-            <p class="text-danger"></p>
+            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+            <p class="text-danger"><?= $passwordError ?></p>
         </div>
         <div class="mb-3">
-        <button type="submit" class="btn btn-primary" name="btn-login">Login</button>
+            <input type="submit" value="Login" name="login-btn" class="btn btn-primary">
         </div>
     </form>
 </div>
