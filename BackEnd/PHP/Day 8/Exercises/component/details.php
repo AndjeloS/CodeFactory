@@ -15,9 +15,14 @@ $sql = "SELECT * FROM `cars` WHERE id = {$id}";
 $result = mysqli_query($conn, $sql);
 
 $row = mysqli_fetch_assoc($result);
+if($row["picture"] == "cars.jpg"){
+  $style = " width:60%";
+}else{
+  $style = " width:80%";
+}
 
 $layout = "<div class=card style=width:100%;>
-                            <img src='../images/cars/{$row["picture"]}' style=width:80%; class='card-img-top mt-3 ms-4' alt=...>
+                            <img src='../images/cars/{$row["picture"]}' style=$style; class='card-img-top mt-3 ms-4' alt=...>
                             <div class=card-body>
                                 <h5 class=card-title>{$row["name"]}</h5>
                                 <p class=card-text>Price: {$row["price"]}€</p>
