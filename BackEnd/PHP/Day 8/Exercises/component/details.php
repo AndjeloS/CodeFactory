@@ -60,8 +60,8 @@ $layout = "<div class=card style=width:100%;>
           <img draggable="false" style="width: 30px;" class="me-3" src="../images/profile_pic/<?=$userRow["picture"] ?>" > <?= $userRow["first_name"] ?>
           </a>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="login.php">Login</a></li>
-            <li><a class="dropdown-item" href="register.php">Signup</a></li>
+            <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+            <li><a class="dropdown-item" href="logout.php?logout">Logout</a></li>
           </ul>
         </li>
       </ul>
