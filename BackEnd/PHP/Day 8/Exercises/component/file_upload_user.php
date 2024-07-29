@@ -15,7 +15,7 @@
         if($message == "Ok"){
             $ext = strtolower(pathinfo($picture["name"], PATHINFO_EXTENSION));
             $picture_name = uniqid("") . "." . $ext;
-            $destination = "../images/profile_pic/{$picture_name}{$picture_name}";
+            $destination = "../images/profile_pic/{$picture_name}";
 
             move_uploaded_file($picture["tmp_name"], $destination);
         }
