@@ -1,8 +1,8 @@
 <?php
-$username = "root";
-$hostname = "localhost"; #127.0.0.1
-$password = "";
-$dbname = "car_rental";
+$username = "sretencodefactor_admin";
+$hostname = "173.212.235.205"; #127.0.0.1
+$password = "Ok4ygmam!";
+$dbname = "sretencodefactor_car_rental";
 
 
 //create connection

@@ -31,14 +31,16 @@ $userRow = mysqli_fetch_assoc($userResult);
                         <hr>
                         <p>$picture[1]</p>
                     </div>";
+                    #redirect to index after 3 seconds
+                    header('refresh: 3; Location: ../dashboard.php');
         }else {
             echo "<div class='alert alert-danger' role='alert'>
                         Something went wrong, please try again!
                     </div>";
         }
 
-        #redirect to index after 3 seconds
-        header("refresh: 3; url=index.php");
+        
+        ;
     }
 
 ?>

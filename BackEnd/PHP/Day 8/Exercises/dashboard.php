@@ -41,8 +41,8 @@
                                 <p class=card-text>Price: {$row["price"]}€</p>
                                 <p class='card-text'>Manufacturer: {$row["manufacturer"]}</p>
                                 <p class='card-text'>Model: {$row["model"]}</p>
-                                <a href='component/update.php?id={$row["id"]}' class='btn btn-warning'>Update</a>
-                                <a href='component/delete.php?id={$row["id"]}' class='btn btn-danger'>Delete</a>
+                                <a href='/component/update.php?id={$row["id"]}' class='btn btn-warning'>Update</a>
+                                <a href='/component/delete.php?id={$row["id"]}' class='btn btn-danger'>Delete</a>
                             </div>
                         </div>";
         }
