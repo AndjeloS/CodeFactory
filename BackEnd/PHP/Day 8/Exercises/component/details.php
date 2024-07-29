@@ -61,7 +61,7 @@ $layout = "<div class=card style=width:100%;>
           </a>
           <ul class="dropdown-menu dropdown-menu-dark">
             <li><a class="dropdown-item" href="profile.php">Profile</a></li>
-            <li><a class="dropdown-item" href="logout.php?logout">Logout</a></li>
+            <li><a class="dropdown-item" href="./logout.php?logout">Logout</a></li>
           </ul>
         </li>
       </ul>
