@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "genre": "Rock",
+    "country": "United Kingdom",
+    "year": "1975"
+  },
+  {
+    "title": "Imagine",
+    "artist": "John Lennon",
+    "genre": "Pop",
+    "country": "United Kingdom",
+    "year": "1971"
+  }
+]
