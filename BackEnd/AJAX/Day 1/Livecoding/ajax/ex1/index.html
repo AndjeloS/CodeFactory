@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Show Data</button>
+    <p id="result"></p>
+
+    <script>
+        function showData(){
+            let xhttp = new XMLHttpRequest();
+            xhttp.open("GET","ajax-info.txt");
+            xhttp.onload = function(){
+            if(this.status == 200){
+                document.getElementById('result').innerHTML = this.responseText;
+                }
+            }
+            xhttp.send();
+        }
+       let btn = document.getElementById('btn');
+       btn.addEventListener('click', showData)
+    </script>
+</body>
+</html>
