@@ -1,0 +1,3 @@
+symfony new my_project_directory --version="7.1.*" --webapp
+
+php bin/console make:controller BrandNewController
