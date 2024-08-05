@@ -1,3 +1,10 @@
 symfony new my_project_directory --version="7.1.*" --webapp
 
 php bin/console make:controller BrandNewController
+
+
+symnfony console doctrine:database:create
+
+symfony console make:entity
+
+symfony.exe console doctrine:migrations:migrate
