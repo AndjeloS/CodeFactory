@@ -1,0 +1,11 @@
+.center-image {
+  display: block;
+  margin: 15px auto;
+  width: 50%;
+}
+
+.center {
+  display: block;
+  margin: 0px auto;
+  width: fit-content;
+}

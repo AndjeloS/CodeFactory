@@ -1,0 +1,8 @@
+h1 {
+  color: green;
+  padding: 5px;
+  background-color: rgba(235, 235, 235, 0.849);
+  border: 1px solid black;
+  width: fit-content;
+  margin: 0px auto;
+}

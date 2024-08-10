@@ -1,0 +1,59 @@
+{% extends "base.html.twig" %}
+{% block title %}Home Page{% endblock %}
+
+{% block body %}
+<div class="container mt-3">
+    <h1 class="my-4 center">Welcome {{name | upper}}!</h1>
+
+    <img src="{{asset('images/waterfall.jpg')}}" alt="waterfall" class="center-image">
+
+    <p class="my-3">Today`s date: {{'now'|date('d/m/Y')}}</p>
+
+    <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fuga itaque magni totam quisquam quasi doloribus molestias optio. Rem corporis eius ad nulla debitis similique sunt fuga, at alias tempora.
+    Atque voluptatem ipsum adipisci fugiat tempora necessitatibus est iure? Laborum eos consectetur consequatur iste, itaque sit laboriosam. Et perspiciatis autem voluptatem nihil qui voluptates ut dignissimos ducimus? Consectetur, praesentium cupiditate?
+    </p>
+
+    <h4 class="mt-5">Total items: {{itemArray|length + newItemArray|length}}</h4>
+
+    <h2 class="mb-3 mt-5">Items</h2>
+
+    <div>
+       {% for item in itemArray %}
+       <h5>{{item|join(',')}}</h5>
+       <p>Item: {{item}}</p>
+       {% endfor %} 
+    </div>
+
+    <hr>
+
+    <h2 class="mb-3 mt-5">New items</h2>
+
+    <div class="row row-cols-lg-3 row-cols-sm-1 row-cols-md-2">
+       {% for item in newItemArray %}
+
+        {% if item.availability == true %}
+            <div class="card me-2 my-2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><span class="badge text-bg-secondary me-2">{{item.id}}</span> {{item.name}}</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            {% else %}
+                <p>Item {{item.id}} {{item.name}} is not available</p>
+        {% endif %}
+
+        {% else %}
+            <h3 class="ms-5">No item found!</h3>
+       {% endfor %} 
+    </div>
+
+    <hr>
+
+    <div>
+    
+    </div>
+
+</div>
+
+{% endblock %}
