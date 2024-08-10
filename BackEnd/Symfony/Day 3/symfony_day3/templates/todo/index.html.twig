@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Todo index{% endblock %}
+
+{% block body %}
+
+    <h1 class="mt-3">Todo List:</h1>
+
+    <div class="mt-5">
+        <a href="{{ path('app_todo_new') }}" class="btn btn-success">Create new</a>
+    </div>
+
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1 mt-1">
+        {% for todo in todos %}
+            <div class="card me-3 my-3" style="width: 18rem;">
+                <img src="https://cdn.pixabay.com/photo/2020/05/30/09/53/todo-lists-5238324_1280.jpg" class="card-img-top mt-2" alt={{todo.name}}>
+                <div class="card-body">
+                    <h5 class="card-title">{{ todo.id }} {{todo.name}}</h5>
+                    <div class="d-flex justify-content-between my-2">
+                        <div>
+                            <p class="card-text badge text-bg-secondary">{{todo.priority}}</p>
+                        </div>
+                        <div>
+                            <p class="card-text">{{ todo.createdAt ? todo.createdAt|date('Y-m-d H:i:s') : '' }}</p>
+                        </div>
+                    </div>
+                    <p class="card-text" style="height: 60px;">{{todo.description}}</p>
+                    <div>
+                        <a href="{{ path('app_todo_show', {'id': todo.id}) }}" class="btn btn-primary">Details</a>
+                        <a href="{{ path('app_todo_edit', {'id': todo.id}) }}" class="btn btn-warning">Edit</a>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+                <h5 style="color: red;">no records found!</h5>
+        {% endfor %}
+    </div>
+    
+
+
+{% endblock %}
