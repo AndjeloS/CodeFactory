@@ -5,11 +5,10 @@ symfony server:start
 php bin/console make:controller BrandNewController
 
 
-
 Create Database:
     symfony console doctrine:database:create
 
-Creating Entity:
+Create Entity:
     symfony console make:entity
 
 Updating entity:
@@ -17,5 +16,18 @@ Updating entity:
         symfony.exe console doctrine:migration
         symfony.exe console doctrine:migrations:migrate
 		
-Creating CRUD:
+		symfony console doctrine:schema:update --force  (forces an entity update without creating a migration save)
+		
+Create CRUD:
 	symfony console make:crud
+	
+Security - Create User:
+	php bin/console make:user
+Change or Add Columns:
+	php bin/console make:entity (then put in the entity name)
+
+Create Login form:
+	php bin/console make:security:form-login
+
+Create Sign up form:
+	php bin/console make:registration-form
