@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Productpage{% endblock %}
+
+{% block body %}
+    <div class="card mt-4" style="width: 18rem;">
+        <img src="{{product.image}}" class="card-img-top mt-2" style="height: 300px;" alt="{{product.name}}">
+        <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">Price: {{product.price}}</p>
+        </div>
+    </div>
+
+    <a href="{{path('app_user_products')}}" class="btn btn-primary mt-5">Go back</a>
+{% endblock %}
