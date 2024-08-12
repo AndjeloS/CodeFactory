@@ -31,3 +31,12 @@ Create Login form:
 
 Create Sign up form:
 	php bin/console make:registration-form
+
+
+
+	
+Install easy admin:
+	composer require easycorp/easyadmin-bundle
+
+Create dashboard:
+	symfony console make:admin:crud
