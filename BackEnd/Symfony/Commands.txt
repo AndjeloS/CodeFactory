@@ -13,7 +13,7 @@ Create Entity:
 
 Updating entity:
     Add Column:
-        symfony.exe console doctrine:migration
+        symfony.exe console make:migration
         symfony.exe console doctrine:migrations:migrate
 		
 		symfony console doctrine:schema:update --force  (forces an entity update without creating a migration save)
