@@ -13,3 +13,5 @@ create table tablename(
     price decimal(12, 2) not null,
     picture varchar(255) not null
 )
+
+ALTER TABLE tablename ADD Foreign Key (fk_name_ID) REFERENCES tablename(tablenameID) ON DELETE SET null
